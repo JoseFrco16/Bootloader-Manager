@@ -1,4 +1,4 @@
-# Author: JoseFrco16
+# Author: Jose Francisco Marti Martin
 # btl_protocol.py Bootloader protocol script implements the frame used in the communication with the MCU
 
 from enum import Enum  

@@ -1,4 +1,4 @@
-# Author: JoseFrco16
+# Author: Jose Francisco Marti Martin
 # btl_manager.py Bootloader manager establish communication with the MCU bootloader.
 
 import argparse
@@ -57,11 +57,15 @@ def main():
     """
     # The idea is to manage the bootloader from exportable class in btl_class
     
-    btl_utils.CreateLogger()
-    Logger = btl_utils.GetLogger()
+    # 1. Create and initialize Logger
+    Logger = btl_utils.CreateLogger()
     Logger.info("--- Bootloader Manager ---")
 
+    # 2. Create argaparse menu
     args = cli()
+    print(args)
+
+    # 3. Manage runtime cli commands
     cli_runtime(args)
 
 if __name__ == "__main__":

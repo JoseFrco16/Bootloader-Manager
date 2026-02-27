@@ -1,9 +1,13 @@
+# Author: Jose Francisco Marti Martin
+# btl_interface_uart.py 
+
+
 
 class BootloaderClient:
 
-    def __init__(self, port):
+    def __init__(self, args):
         
-        pass
+        # 1. Initialize interface to use
 
     def send(self, cmd):
         

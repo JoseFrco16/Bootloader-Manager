@@ -1,4 +1,4 @@
-# Author: JoseFrco16
+# Author: Jose Francisco Marti Martin
 # btl_logging.py Bootloader logger
 
 import logging
@@ -13,7 +13,7 @@ def CreateLogger():
 
     # Create main logger
     Logger = logging.getLogger("bootloader") 
-    Logger.setLevel(logging.DEBUG) # Nivel global 
+    Logger.setLevel(logging.DEBUG)
 
     # --- File handler --- 
     file_handler = logging.FileHandler("bootloader.log", encoding="utf-8") 
@@ -29,6 +29,8 @@ def CreateLogger():
 
     Logger.addHandler(file_handler) 
     Logger.addHandler(console_handler)
+
+    return Logger
 
 def GetLogger():
     """
